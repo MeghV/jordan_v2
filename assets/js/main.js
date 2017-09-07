@@ -220,9 +220,10 @@
 
 					var	$this = $(this),
 						$image = $this.find('.image'), $image_img = $image.children('img'),
+						$video = $this.find('.video')[0],
 						x;
 
-					// No image? Bail.
+					// If no image and no video, bail.
 						if ($image.length == 0)
 							return;
 
